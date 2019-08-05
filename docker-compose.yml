@@ -7,8 +7,10 @@ services:
     ports:
       - "4000:4000"
     environment:
-      PRISMA_ENDPOINT: http://prisma:4466
+      CLIENT_HOSTS:
       JWT_SECRET:
+      NODE_ENV:
+      PRISMA_ENDPOINT: http://prisma:4466
       PRISMA_SERVICE:
       PRISMA_STAGE:
       PRISMA_SERVICE_SECRET:
