@@ -1,9 +1,9 @@
-FROM node:10.15.3-alpine
+FROM node:14.18.2-alpine3.14
 
 WORKDIR /usr/app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm i
 
-COPY . .
+COPY --chown=node:node . .
